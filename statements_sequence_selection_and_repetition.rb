@@ -9,11 +9,13 @@ if favorite_number >= 10
   puts "And now your favorite_number is 10 more!"
 end
 puts "THE END"
-#see how the favorite number was supposed to be 16 but the selection(if...end) statement made it skip to a new result. in other words favorite_number was supposed to result in 16 but now it results as "And now your favorite_number is 10 more!"
+#see how the favorite number was supposed to be 256 but the selection(if...end) statement made it skip to a new result. in other words favorite_number was supposed to result in 16 but now it results as "And now your favorite_number is 10 more!"
 
 #Repetition lets us disrupt default flow by repeating. The .times method, which will introduce formally in just a moment, means "do something <value> times." That "something" is held inside a (do...end) block.
 favorite_number = 2 * 2 * 2 * 2 * 2 * 2 * 2 * 2
 10.times do
   favorite_number = favorite_number + 1
 end
-puts "And now your favorite_number is 10 more! It is #{favorite_number}"
+puts "And now your favorite_number is 10 more! It is #{favorite_number}."
+#=>And now your favorite_number is 10 more! It is 266. => nil
+#Remember statements always give a nil return value, but the important part is the statement it returned: And now your favorite_number is 10 more! It is 266.
